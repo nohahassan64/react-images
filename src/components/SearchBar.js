@@ -17,6 +17,13 @@ class SearchBar extends Component {
                             value={this.state.term}
                             onChange={ (e) => this.setState({ term : e.target.value})}
                         />
+                        <button 
+                            onClick={this.onFormSubmit}
+                            className="ui blue button"
+                            style={{ marginTop: '20px'}} 
+                            >
+                                Submit
+                            </button>
                     </div>
                 </form> 
             </div>
